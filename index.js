@@ -26,7 +26,35 @@ const fi = (function() {
     },
 
     reduce: function(collection, callback, acc) {
+      for(const key in collection){
+        let x = callback(collection[key]);
+        acc += x;
+      }
+      return acc;
+    },
 
+    find: function(collection, predicate){
+      return predicate.every(function(x){
+        return x[collection];
+      })
+    },
+
+    filter: function(collection, predicate){
+      for(const key in collection){
+        if(key == predicate){
+          return key;
+        }
+      }
+    },
+
+    size: function(collection){
+      let size = 0;
+      for(const key in collection){
+        if(collection.hasOwnProperty(key)){
+          size++;
+        }
+      }
+      return size;
     },
 
     functions: function() {
