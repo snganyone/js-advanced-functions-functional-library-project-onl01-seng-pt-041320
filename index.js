@@ -61,12 +61,14 @@ const fi = (function() {
 
     first: function(array, n){
       if(n){
-        for(let x = 0; x <= n; x++){
-          return array[x];
-        }
+        return array.slice(0, n);
       } else{
         return array[0];
       }
+    },
+
+    last: function(array, n){
+      return array[array.length - 1];
     },
 
     compact: function(array){
