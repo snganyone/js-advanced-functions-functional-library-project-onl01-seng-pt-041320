@@ -34,9 +34,11 @@ const fi = (function() {
     },
 
     find: function(collection, predicate){
-      return predicate.every(function(x){
-        return x[collection];
-      })
+      for(let i = 0; i < this.length; i++){
+        if(this[i] === predicate){
+          return i;
+        }
+      }
     },
 
     filter: function(collection, predicate){
@@ -65,6 +67,18 @@ const fi = (function() {
       } else{
         return array[0];
       }
+    },
+
+    compact: function(array){
+      let truearray = [];
+
+      for(let i = 0; i < array.length; i++){
+        let falsey = Boolean(array[i]);
+        if(falsey === true){
+          truearray.push(array[i]);
+        }
+      }
+      return truearray;
     },
 
     functions: function() {
