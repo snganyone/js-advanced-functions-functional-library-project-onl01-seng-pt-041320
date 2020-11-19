@@ -18,9 +18,8 @@ const fi = (function() {
 
     map: function(collection, callback) {
       let arr = [];
-      for(let x = 0; x < collection.length; x++){
-        let y = callback(collection[x]);
-        //console.log(y);
+      for(const key in collection){
+        let y = callback(collection[key]);
         arr.push(y);
       }
       return arr;
