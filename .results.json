@@ -2,12 +2,12 @@
   "stats": {
     "suites": 16,
     "tests": 34,
-    "passes": 21,
+    "passes": 27,
     "pending": 0,
-    "failures": 13,
-    "start": "2020-11-19T08:01:01.430Z",
-    "end": "2020-11-19T08:01:02.958Z",
-    "duration": 1528
+    "failures": 7,
+    "start": "2020-11-19T23:39:55.878Z",
+    "end": "2020-11-19T23:39:58.663Z",
+    "duration": 2785
   },
   "tests": [
     {
@@ -20,7 +20,7 @@
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js each calls alert properly on object values",
-      "duration": 3,
+      "duration": 4,
       "currentRetry": 0,
       "err": {}
     },
@@ -55,35 +55,23 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js map does not modify the original object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the correct reduced value when passed an initial value",
       "fullTitle": "index.js reduce returns the correct reduced value when passed an initial value",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "message": "expected NaN to equal 40",
-        "showDiff": true,
-        "actual": "NaN",
-        "expected": "40",
-        "stack": "AssertionError: expected NaN to equal 40\n    at Context.<anonymous> (test/indexTest.js:69:32)"
-      }
+      "err": {}
     },
     {
       "title": "returns the correct reduced value when not passed an initial value",
       "fullTitle": "index.js reduce returns the correct reduced value when not passed an initial value",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected NaN to equal 28",
-        "showDiff": true,
-        "actual": "NaN",
-        "expected": "28",
-        "stack": "AssertionError: expected NaN to equal 28\n    at Context.<anonymous> (test/indexTest.js:74:32)"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original array",
@@ -97,25 +85,14 @@
       "fullTitle": "index.js find returns the value if found",
       "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 4",
-        "showDiff": true,
-        "expected": 4,
-        "stack": "AssertionError: expected undefined to equal 4\n    at Context.<anonymous> (test/indexTest.js:94:54)"
-      }
+      "err": {}
     },
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js find does not traverse the whole array if the value is found early",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected { Spy } to have been called 3 times but got 0",
-        "showDiff": true,
-        "actual": "0",
-        "expected": "3",
-        "stack": "AssertionError: expected { Spy } to have been called 3 times but got 0\n    at Context.<anonymous> (test/indexTest.js:102:39)"
-      }
+      "err": {}
     },
     {
       "title": "returns undefined if the value is not present",
@@ -127,12 +104,9 @@
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js filter correctly filters for values that the callback evaluates as true",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: Cannot read property 'length' of undefined\n    at arraysEqual (test/indexTest.js:295:12)\n    at Context.<anonymous> (test/indexTest.js:122:14)",
-        "message": "Cannot read property 'length' of undefined"
-      }
+      "err": {}
     },
     {
       "title": "correctly returns the size of the collection when an array is passed",
@@ -144,7 +118,7 @@
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js size correctly returns the size of the collection (amount of keys) when an object is passed",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -165,21 +139,21 @@
     {
       "title": "returns the last element of the collection",
       "fullTitle": "index.js last returns the last element of the collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js last returns the last n elements of the collection when the second optional argument (n) is provided",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
       "fullTitle": "index.js compact returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -193,11 +167,14 @@
     {
       "title": "correctly sorts arrays of integers and arrays of strings",
       "fullTitle": "index.js sortBy correctly sorts arrays of integers and arrays of strings",
-      "duration": 0,
+      "duration": 3,
       "currentRetry": 0,
       "err": {
-        "stack": "TypeError: fi.sortBy is not a function\n    at Context.<anonymous> (test/indexTest.js:200:29)",
-        "message": "fi.sortBy is not a function"
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/indexTest.js:200:98)"
       }
     },
     {
@@ -205,25 +182,22 @@
       "fullTitle": "index.js sortBy does not modify the original arrays",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.sortBy is not a function\n    at Context.<anonymous> (test/indexTest.js:205:10)",
-        "message": "fi.sortBy is not a function"
-      }
+      "err": {}
     },
     {
       "title": "correctly sorts arrays of integers with non-standard sort",
       "fullTitle": "index.js sortBy correctly sorts arrays of integers with non-standard sort",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
       "err": {
-        "stack": "TypeError: fi.sortBy is not a function\n    at Context.<anonymous> (test/indexTest.js:212:29)",
-        "message": "fi.sortBy is not a function"
+        "stack": "TypeError: The comparison function must be either a function or undefined\n    at Array.sort (native)\n    at Object.sortBy (about:blank:101:21)\n    at Context.<anonymous> (test/indexTest.js:212:29)",
+        "message": "The comparison function must be either a function or undefined"
       }
     },
     {
       "title": "correctly flattens a ludicrously nested array",
       "fullTitle": "index.js flatten correctly flattens a ludicrously nested array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.flatten is not a function\n    at Context.<anonymous> (test/indexTest.js:221:26)",
@@ -270,28 +244,28 @@
     {
       "title": "does not modify the original object you crazy DOGE!",
       "fullTitle": "index.js keys does not modify the original object you crazy DOGE!",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js values retrieves all the values of the object's own properties",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original object you crazy DOGE!",
       "fullTitle": "index.js values does not modify the original object you crazy DOGE!",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns a sorted collection of the names of every method in an object",
       "fullTitle": "index.js functions returns a sorted collection of the names of every method in an object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: Cannot read property 'length' of undefined\n    at arraysEqual (test/indexTest.js:295:12)\n    at Context.<anonymous> (test/indexTest.js:289:14)",
@@ -302,100 +276,32 @@
   "pending": [],
   "failures": [
     {
-      "title": "returns the correct reduced value when passed an initial value",
-      "fullTitle": "index.js reduce returns the correct reduced value when passed an initial value",
-      "duration": 2,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected NaN to equal 40",
-        "showDiff": true,
-        "actual": "NaN",
-        "expected": "40",
-        "stack": "AssertionError: expected NaN to equal 40\n    at Context.<anonymous> (test/indexTest.js:69:32)"
-      }
-    },
-    {
-      "title": "returns the correct reduced value when not passed an initial value",
-      "fullTitle": "index.js reduce returns the correct reduced value when not passed an initial value",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected NaN to equal 28",
-        "showDiff": true,
-        "actual": "NaN",
-        "expected": "28",
-        "stack": "AssertionError: expected NaN to equal 28\n    at Context.<anonymous> (test/indexTest.js:74:32)"
-      }
-    },
-    {
-      "title": "returns the value if found",
-      "fullTitle": "index.js find returns the value if found",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 4",
-        "showDiff": true,
-        "expected": 4,
-        "stack": "AssertionError: expected undefined to equal 4\n    at Context.<anonymous> (test/indexTest.js:94:54)"
-      }
-    },
-    {
-      "title": "does not traverse the whole array if the value is found early",
-      "fullTitle": "index.js find does not traverse the whole array if the value is found early",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected { Spy } to have been called 3 times but got 0",
-        "showDiff": true,
-        "actual": "0",
-        "expected": "3",
-        "stack": "AssertionError: expected { Spy } to have been called 3 times but got 0\n    at Context.<anonymous> (test/indexTest.js:102:39)"
-      }
-    },
-    {
-      "title": "correctly filters for values that the callback evaluates as true",
-      "fullTitle": "index.js filter correctly filters for values that the callback evaluates as true",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: Cannot read property 'length' of undefined\n    at arraysEqual (test/indexTest.js:295:12)\n    at Context.<anonymous> (test/indexTest.js:122:14)",
-        "message": "Cannot read property 'length' of undefined"
-      }
-    },
-    {
       "title": "correctly sorts arrays of integers and arrays of strings",
       "fullTitle": "index.js sortBy correctly sorts arrays of integers and arrays of strings",
-      "duration": 0,
+      "duration": 3,
       "currentRetry": 0,
       "err": {
-        "stack": "TypeError: fi.sortBy is not a function\n    at Context.<anonymous> (test/indexTest.js:200:29)",
-        "message": "fi.sortBy is not a function"
-      }
-    },
-    {
-      "title": "does not modify the original arrays",
-      "fullTitle": "index.js sortBy does not modify the original arrays",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.sortBy is not a function\n    at Context.<anonymous> (test/indexTest.js:205:10)",
-        "message": "fi.sortBy is not a function"
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/indexTest.js:200:98)"
       }
     },
     {
       "title": "correctly sorts arrays of integers with non-standard sort",
       "fullTitle": "index.js sortBy correctly sorts arrays of integers with non-standard sort",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
       "err": {
-        "stack": "TypeError: fi.sortBy is not a function\n    at Context.<anonymous> (test/indexTest.js:212:29)",
-        "message": "fi.sortBy is not a function"
+        "stack": "TypeError: The comparison function must be either a function or undefined\n    at Array.sort (native)\n    at Object.sortBy (about:blank:101:21)\n    at Context.<anonymous> (test/indexTest.js:212:29)",
+        "message": "The comparison function must be either a function or undefined"
       }
     },
     {
       "title": "correctly flattens a ludicrously nested array",
       "fullTitle": "index.js flatten correctly flattens a ludicrously nested array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.flatten is not a function\n    at Context.<anonymous> (test/indexTest.js:221:26)",
@@ -435,7 +341,7 @@
     {
       "title": "returns a sorted collection of the names of every method in an object",
       "fullTitle": "index.js functions returns a sorted collection of the names of every method in an object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: Cannot read property 'length' of undefined\n    at arraysEqual (test/indexTest.js:295:12)\n    at Context.<anonymous> (test/indexTest.js:289:14)",
@@ -454,7 +360,7 @@
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js each calls alert properly on object values",
-      "duration": 3,
+      "duration": 4,
       "currentRetry": 0,
       "err": {}
     },
@@ -489,6 +395,20 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js map does not modify the original object",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the correct reduced value when passed an initial value",
+      "fullTitle": "index.js reduce returns the correct reduced value when passed an initial value",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the correct reduced value when not passed an initial value",
+      "fullTitle": "index.js reduce returns the correct reduced value when not passed an initial value",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
@@ -501,9 +421,30 @@
       "err": {}
     },
     {
+      "title": "returns the value if found",
+      "fullTitle": "index.js find returns the value if found",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not traverse the whole array if the value is found early",
+      "fullTitle": "index.js find does not traverse the whole array if the value is found early",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "returns undefined if the value is not present",
       "fullTitle": "index.js find returns undefined if the value is not present",
       "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly filters for values that the callback evaluates as true",
+      "fullTitle": "index.js filter correctly filters for values that the callback evaluates as true",
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -517,7 +458,7 @@
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js size correctly returns the size of the collection (amount of keys) when an object is passed",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -538,27 +479,34 @@
     {
       "title": "returns the last element of the collection",
       "fullTitle": "index.js last returns the last element of the collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js last returns the last n elements of the collection when the second optional argument (n) is provided",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
       "fullTitle": "index.js compact returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js compact does not modify the original array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not modify the original arrays",
+      "fullTitle": "index.js sortBy does not modify the original arrays",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
@@ -573,21 +521,21 @@
     {
       "title": "does not modify the original object you crazy DOGE!",
       "fullTitle": "index.js keys does not modify the original object you crazy DOGE!",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js values retrieves all the values of the object's own properties",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original object you crazy DOGE!",
       "fullTitle": "index.js values does not modify the original object you crazy DOGE!",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }

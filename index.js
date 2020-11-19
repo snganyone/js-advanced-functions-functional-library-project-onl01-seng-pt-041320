@@ -26,27 +26,35 @@ const fi = (function() {
     },
 
     reduce: function(collection, callback, acc) {
-      for(const key in collection){
-        let x = callback(collection[key]);
-        acc += x;
+      let i;
+      if(acc){
+        i = 0;
+      } else{
+        i = 1;
+        acc = collection[0];
+      }
+      for(i; i < collection.length; i++){
+        acc = callback(acc, collection[i], collection);
       }
       return acc;
     },
 
     find: function(collection, predicate){
-      for(let i = 0; i < this.length; i++){
-        if(this[i] === predicate){
-          return i;
+      for(let i = 0; i < collection.length; i++){
+        if(predicate(collection[i])){
+          return collection[i];
         }
       }
     },
 
     filter: function(collection, predicate){
-      for(const key in collection){
-        if(key == predicate){
-          return key;
+      let arr = [];
+      for(let i = 0; i < collection.length; i++){
+        if(predicate(collection[i])){
+          arr.push(collection[i]);
         }
       }
+      return arr;
     },
 
     size: function(collection){
@@ -87,7 +95,8 @@ const fi = (function() {
     },
 
     sortBy: function(array, callback){
-
+      let newarr = array.slice();
+      return newarr.sort(callback());
     },
 
     keys: function(obj){
