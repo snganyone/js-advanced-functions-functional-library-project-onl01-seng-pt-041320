@@ -57,6 +57,16 @@ const fi = (function() {
       return size;
     },
 
+    first: function(array, n){
+      if(n){
+        for(let x = 0; x <= n; x++){
+          return array[x];
+        }
+      } else{
+        return array[0];
+      }
+    },
+
     functions: function() {
 
     },
