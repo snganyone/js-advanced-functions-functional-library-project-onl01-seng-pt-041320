@@ -81,6 +81,14 @@ const fi = (function() {
       return truearray;
     },
 
+    keys: function(obj){
+      return Object.keys(obj);
+    },
+
+    values: function(obj){
+      return Object.values(obj);
+    },
+
     functions: function() {
 
     },
