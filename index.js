@@ -68,6 +68,9 @@ const fi = (function() {
     },
 
     last: function(array, n){
+      if(n){
+        return array.slice(-n);
+      }
       return array[array.length - 1];
     },
 
