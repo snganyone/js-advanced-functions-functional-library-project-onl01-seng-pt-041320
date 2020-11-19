@@ -2,39 +2,32 @@
   "stats": {
     "suites": 16,
     "tests": 34,
-    "passes": 8,
+    "passes": 9,
     "pending": 0,
-    "failures": 26,
-    "start": "2020-11-19T04:00:36.252Z",
-    "end": "2020-11-19T04:00:37.965Z",
-    "duration": 1713
+    "failures": 25,
+    "start": "2020-11-19T04:32:11.106Z",
+    "end": "2020-11-19T04:32:12.849Z",
+    "duration": 1743
   },
   "tests": [
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js each calls alert with each element passed",
-      "duration": 3,
+      "duration": 5,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js each calls alert properly on object values",
-      "duration": 5,
+      "duration": 2,
       "currentRetry": 0,
-      "err": {
-        "message": "expected { Spy } to have been called with [ 1 ]",
-        "showDiff": true,
-        "expected": [
-          1
-        ],
-        "stack": "AssertionError: expected { Spy } to have been called with [ 1 ]\n    at objValues.forEach (test/indexTest.js:25:72)\n    at Array.forEach (<anonymous>)\n    at Context.<anonymous> (test/indexTest.js:25:17)"
-      }
+      "err": {}
     },
     {
       "title": "returns the original collection",
       "fullTitle": "index.js each returns the original collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -55,7 +48,7 @@
     {
       "title": "successfully returns a correctly populated array from modified object values",
       "fullTitle": "index.js map successfully returns a correctly populated array from modified object values",
-      "duration": 4,
+      "duration": 2,
       "currentRetry": 0,
       "err": {
         "message": "expected false to equal true",
@@ -68,7 +61,7 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js map does not modify the original object",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -99,14 +92,14 @@
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js reduce does not modify the original array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the value if found",
       "fullTitle": "index.js find returns the value if found",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.find is not a function\n    at Context.<anonymous> (test/indexTest.js:94:17)",
@@ -126,7 +119,7 @@
     {
       "title": "returns undefined if the value is not present",
       "fullTitle": "index.js find returns undefined if the value is not present",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.find is not a function\n    at Context.<anonymous> (test/indexTest.js:106:17)",
@@ -136,7 +129,7 @@
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js filter correctly filters for values that the callback evaluates as true",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.filter is not a function\n    at Context.<anonymous> (test/indexTest.js:121:32)",
@@ -146,7 +139,7 @@
     {
       "title": "correctly returns the size of the collection when an array is passed",
       "fullTitle": "index.js size correctly returns the size of the collection when an array is passed",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.size is not a function\n    at Context.<anonymous> (test/indexTest.js:131:17)",
@@ -206,7 +199,7 @@
     {
       "title": "returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
       "fullTitle": "index.js compact returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.compact is not a function\n    at Context.<anonymous> (test/indexTest.js:168:29)",
@@ -306,14 +299,14 @@
     {
       "title": "does not modify the original object you crazy DOGE!",
       "fullTitle": "index.js keys does not modify the original object you crazy DOGE!",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js values retrieves all the values of the object's own properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.values is not a function\n    at Context.<anonymous> (test/indexTest.js:268:29)",
@@ -323,7 +316,7 @@
     {
       "title": "does not modify the original object you crazy DOGE!",
       "fullTitle": "index.js values does not modify the original object you crazy DOGE!",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -341,23 +334,9 @@
   "pending": [],
   "failures": [
     {
-      "title": "calls alert properly on object values",
-      "fullTitle": "index.js each calls alert properly on object values",
-      "duration": 5,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected { Spy } to have been called with [ 1 ]",
-        "showDiff": true,
-        "expected": [
-          1
-        ],
-        "stack": "AssertionError: expected { Spy } to have been called with [ 1 ]\n    at objValues.forEach (test/indexTest.js:25:72)\n    at Array.forEach (<anonymous>)\n    at Context.<anonymous> (test/indexTest.js:25:17)"
-      }
-    },
-    {
       "title": "successfully returns a correctly populated array from modified object values",
       "fullTitle": "index.js map successfully returns a correctly populated array from modified object values",
-      "duration": 4,
+      "duration": 2,
       "currentRetry": 0,
       "err": {
         "message": "expected false to equal true",
@@ -394,7 +373,7 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js find returns the value if found",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.find is not a function\n    at Context.<anonymous> (test/indexTest.js:94:17)",
@@ -414,7 +393,7 @@
     {
       "title": "returns undefined if the value is not present",
       "fullTitle": "index.js find returns undefined if the value is not present",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.find is not a function\n    at Context.<anonymous> (test/indexTest.js:106:17)",
@@ -424,7 +403,7 @@
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js filter correctly filters for values that the callback evaluates as true",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.filter is not a function\n    at Context.<anonymous> (test/indexTest.js:121:32)",
@@ -434,7 +413,7 @@
     {
       "title": "correctly returns the size of the collection when an array is passed",
       "fullTitle": "index.js size correctly returns the size of the collection when an array is passed",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.size is not a function\n    at Context.<anonymous> (test/indexTest.js:131:17)",
@@ -494,7 +473,7 @@
     {
       "title": "returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
       "fullTitle": "index.js compact returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.compact is not a function\n    at Context.<anonymous> (test/indexTest.js:168:29)",
@@ -594,7 +573,7 @@
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js values retrieves all the values of the object's own properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.values is not a function\n    at Context.<anonymous> (test/indexTest.js:268:29)",
@@ -616,14 +595,21 @@
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js each calls alert with each element passed",
-      "duration": 3,
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "calls alert properly on object values",
+      "fullTitle": "index.js each calls alert properly on object values",
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the original collection",
       "fullTitle": "index.js each returns the original collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -644,28 +630,28 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js map does not modify the original object",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js reduce does not modify the original array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original object you crazy DOGE!",
       "fullTitle": "index.js keys does not modify the original object you crazy DOGE!",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original object you crazy DOGE!",
       "fullTitle": "index.js values does not modify the original object you crazy DOGE!",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     }

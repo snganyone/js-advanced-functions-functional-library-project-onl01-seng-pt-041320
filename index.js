@@ -5,8 +5,13 @@ const fi = (function() {
     },
 
     each: function(collection, callback) {
-      for(let x = 0; x < collection.length; x++){
-        callback(collection[x]);
+      // for(let x = 0; x < collection.length; x++){
+      //   console.log(collection[x]);
+      //   callback(collection.values);
+      // }
+      // return collection;
+      for(const key in collection){
+        callback(collection[key]);
       }
       return collection;
     },
@@ -15,6 +20,7 @@ const fi = (function() {
       let arr = [];
       for(let x = 0; x < collection.length; x++){
         let y = callback(collection[x]);
+        //console.log(y);
         arr.push(y);
       }
       return arr;
