@@ -147,8 +147,12 @@ const fi = (function() {
       return Object.values(obj);
     },
 
-    functions: function() {
-
+    functions: function(fi) {
+      return Object.getOwnPropertyNames(fi).filter(function(key){
+        return fi[key] && (typeof fi[key] === "function");
+      }).map(function(key){
+        return fi[key];
+      })
     },
 
 
