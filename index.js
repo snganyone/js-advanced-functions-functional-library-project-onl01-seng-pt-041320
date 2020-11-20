@@ -97,9 +97,9 @@ const fi = (function() {
     sortBy: function(array, callback){
       let newarr = array.slice();
 
-      let sort = newarr.sort((a, b) => a - b);
+      let sort = newarr.sort((a, b) => callback(a) - callback(b));
 
-      return callback(sort);
+      return sort;
     },
 
     flatten: function(array, shallow){
@@ -114,6 +114,34 @@ const fi = (function() {
         return merge;
       } else{
         return flatten(array);
+      }
+    },
+
+    uniq: function(array, isSorted, callback){
+      let uniqChars = array.filter((x, idx) => {
+        return array.indexOf(x) === idx;
+      });
+
+      if(callback){
+        let arr = [];
+        //let newarr = uniqChars.map(x => callback(x));
+        for(let x = 0; x < uniqChars.length; x++){
+          let add_item = true;
+          console.log(arr);
+          for(const key in arr){
+            let c = callback(arr[key]);
+            let arr_call = callback(uniqChars[x]);
+            if(c === arr_call){
+              add_item = false;
+            } 
+          }
+          if(add_item === true){
+            arr.push(uniqChars[x]);
+          }
+        }
+        return arr;        
+      } else{
+        return uniqChars;
       }
     },
 
