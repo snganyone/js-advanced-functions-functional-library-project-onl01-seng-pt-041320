@@ -2,25 +2,25 @@
   "stats": {
     "suites": 16,
     "tests": 34,
-    "passes": 28,
+    "passes": 30,
     "pending": 0,
-    "failures": 6,
-    "start": "2020-11-20T00:28:52.195Z",
-    "end": "2020-11-20T00:28:54.118Z",
-    "duration": 1923
+    "failures": 4,
+    "start": "2020-11-20T01:17:54.456Z",
+    "end": "2020-11-20T01:17:56.814Z",
+    "duration": 2358
   },
   "tests": [
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js each calls alert with each element passed",
-      "duration": 4,
+      "duration": 3,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js each calls alert properly on object values",
-      "duration": 2,
+      "duration": 3,
       "currentRetry": 0,
       "err": {}
     },
@@ -34,7 +34,7 @@
     {
       "title": "successfully returns a correctly populated array",
       "fullTitle": "index.js map successfully returns a correctly populated array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -83,7 +83,7 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js find returns the value if found",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -111,7 +111,7 @@
     {
       "title": "correctly returns the size of the collection when an array is passed",
       "fullTitle": "index.js size correctly returns the size of the collection when an array is passed",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -125,7 +125,7 @@
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js first returns the first element of the collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -146,7 +146,7 @@
     {
       "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js last returns the last n elements of the collection when the second optional argument (n) is provided",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -160,7 +160,7 @@
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js compact does not modify the original array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -174,7 +174,7 @@
     {
       "title": "does not modify the original arrays",
       "fullTitle": "index.js sortBy does not modify the original arrays",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -194,22 +194,16 @@
     {
       "title": "correctly flattens a ludicrously nested array",
       "fullTitle": "index.js flatten correctly flattens a ludicrously nested array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.flatten is not a function\n    at Context.<anonymous> (test/indexTest.js:221:26)",
-        "message": "fi.flatten is not a function"
-      }
+      "err": {}
     },
     {
       "title": "correctly flattens a single level when a second argument of \"true\" is passed",
       "fullTitle": "index.js flatten correctly flattens a single level when a second argument of \"true\" is passed",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.flatten is not a function\n    at Context.<anonymous> (test/indexTest.js:227:26)",
-        "message": "fi.flatten is not a function"
-      }
+      "err": {}
     },
     {
       "title": "removes duplicate values from an array",
@@ -234,7 +228,7 @@
     {
       "title": "retrieves all the names of the object's own enumerable properties",
       "fullTitle": "index.js keys retrieves all the names of the object's own enumerable properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -248,14 +242,14 @@
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js values retrieves all the values of the object's own properties",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original object you crazy DOGE!",
       "fullTitle": "index.js values does not modify the original object you crazy DOGE!",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -283,26 +277,6 @@
         "actual": "false",
         "expected": "true",
         "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/indexTest.js:212:96)"
-      }
-    },
-    {
-      "title": "correctly flattens a ludicrously nested array",
-      "fullTitle": "index.js flatten correctly flattens a ludicrously nested array",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.flatten is not a function\n    at Context.<anonymous> (test/indexTest.js:221:26)",
-        "message": "fi.flatten is not a function"
-      }
-    },
-    {
-      "title": "correctly flattens a single level when a second argument of \"true\" is passed",
-      "fullTitle": "index.js flatten correctly flattens a single level when a second argument of \"true\" is passed",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.flatten is not a function\n    at Context.<anonymous> (test/indexTest.js:227:26)",
-        "message": "fi.flatten is not a function"
       }
     },
     {
@@ -340,14 +314,14 @@
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js each calls alert with each element passed",
-      "duration": 4,
+      "duration": 3,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js each calls alert properly on object values",
-      "duration": 2,
+      "duration": 3,
       "currentRetry": 0,
       "err": {}
     },
@@ -361,7 +335,7 @@
     {
       "title": "successfully returns a correctly populated array",
       "fullTitle": "index.js map successfully returns a correctly populated array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -410,7 +384,7 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js find returns the value if found",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -438,7 +412,7 @@
     {
       "title": "correctly returns the size of the collection when an array is passed",
       "fullTitle": "index.js size correctly returns the size of the collection when an array is passed",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -452,7 +426,7 @@
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js first returns the first element of the collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -473,7 +447,7 @@
     {
       "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js last returns the last n elements of the collection when the second optional argument (n) is provided",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -487,7 +461,7 @@
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js compact does not modify the original array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -501,6 +475,20 @@
     {
       "title": "does not modify the original arrays",
       "fullTitle": "index.js sortBy does not modify the original arrays",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly flattens a ludicrously nested array",
+      "fullTitle": "index.js flatten correctly flattens a ludicrously nested array",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly flattens a single level when a second argument of \"true\" is passed",
+      "fullTitle": "index.js flatten correctly flattens a single level when a second argument of \"true\" is passed",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
@@ -508,7 +496,7 @@
     {
       "title": "retrieves all the names of the object's own enumerable properties",
       "fullTitle": "index.js keys retrieves all the names of the object's own enumerable properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -522,14 +510,14 @@
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js values retrieves all the values of the object's own properties",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original object you crazy DOGE!",
       "fullTitle": "index.js values does not modify the original object you crazy DOGE!",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }

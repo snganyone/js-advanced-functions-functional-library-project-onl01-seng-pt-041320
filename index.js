@@ -96,11 +96,22 @@ const fi = (function() {
 
     sortBy: function(array, callback){
       let newarr = array.slice();
-      let sort = (callback(newarr.sort(function(a,b){
-        return a - b;
-      })));
 
-      return sort;
+      let sort = newarr.sort((a, b) => a - b);
+
+      return callback(sort);
+    },
+
+    flatten: function(array, shallow){
+      let merge = [].concat.apply([], array);
+      let flatten = (arr) => {
+        return arr.reduce((acc, val) => acc.concat(Array.isArray(val)? flatten(val) : val), []);
+      };
+      if(shallow === true){
+        return merge;
+      } else{
+        return flatten(array);
+      }
     },
 
     keys: function(obj){
