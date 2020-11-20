@@ -103,10 +103,13 @@ const fi = (function() {
     },
 
     flatten: function(array, shallow){
+      //flatten 1 level
       let merge = [].concat.apply([], array);
+      //flatten deeply nested array
       let flatten = (arr) => {
         return arr.reduce((acc, val) => acc.concat(Array.isArray(val)? flatten(val) : val), []);
       };
+
       if(shallow === true){
         return merge;
       } else{
