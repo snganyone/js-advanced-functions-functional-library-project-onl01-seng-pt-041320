@@ -96,7 +96,11 @@ const fi = (function() {
 
     sortBy: function(array, callback){
       let newarr = array.slice();
-      return newarr.sort(callback());
+      let sort = (callback(newarr.sort(function(a,b){
+        return a - b;
+      })));
+
+      return sort;
     },
 
     keys: function(obj){
