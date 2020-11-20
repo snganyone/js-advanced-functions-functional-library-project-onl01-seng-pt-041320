@@ -5,11 +5,6 @@ const fi = (function() {
     },
 
     each: function(collection, callback) {
-      // for(let x = 0; x < collection.length; x++){
-      //   console.log(collection[x]);
-      //   callback(collection.values);
-      // }
-      // return collection;
       for(const key in collection){
         callback(collection[key]);
       }
@@ -127,7 +122,6 @@ const fi = (function() {
         //let newarr = uniqChars.map(x => callback(x));
         for(let x = 0; x < uniqChars.length; x++){
           let add_item = true;
-          console.log(arr);
           for(const key in arr){
             let c = callback(arr[key]);
             let arr_call = callback(uniqChars[x]);
